@@ -1,14 +1,17 @@
-import { useState } from 'react'
+// import { useState } from 'react'
 import Sidenav from './components/Sidenav';
-import Main from './pages/Home';
-
+// import Main from './pages/Home';
+import { Outlet } from 'react-router-dom';
 
 function App() {
 
   return (
     <div>
     <Sidenav />
-     <Main />
+     
+     <main>
+        <Outlet />
+      </main>
     </div>
   )
 }

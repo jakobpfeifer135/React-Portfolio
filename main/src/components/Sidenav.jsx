@@ -22,13 +22,13 @@ const Sidenav = () => {
     <div>
       <AiOutlineMenu
         onClick={handleNav}
-        className="absolute top-4 right-4 z-[99] md:hidden text-white text-3xl"
+        className="absolute top-4 right-4 z-[99] md:hidden text-white text-3xl cursor-pointer transition-all duration-200"
       />
       {nav ? (
         <div className="fixed w-full h-screen bg-[#405757] flex flex-col justify-center items-center z-20 nav ">
           <Link
-            to="/Home"
-            className={"nav-link ${currentPage === '/Home' ? 'active' : ''} w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 nav-item"}
+            to="/"
+            className={`w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 nav-item`}
           >
             <AiOutlineHome size={20} />
             <span className="pl-4">Home</span>
@@ -36,7 +36,7 @@ const Sidenav = () => {
 
           <Link
             to="/AboutMe"
-            className={"nav-link ${currentPage === '/AboutMe' ? 'active' : ''} w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 nav-item"}
+            className={` w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 nav-item`}
           >
             <GrProjects size={20} />
             <span className="pl-4">About me</span>
@@ -44,7 +44,7 @@ const Sidenav = () => {
 
           <Link
             to="/Portfolio"
-            className={"nav-link ${currentPage === '/Portfolio' ? 'active' : ''} w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 nav-item"}
+            className={` w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 nav-item`}
           >
             <AiOutlineProject size={20} />
             <span className="pl-4">Portfolio</span>
@@ -52,7 +52,7 @@ const Sidenav = () => {
 
           <Link
             to="/ContactMe"
-            className={"nav-link ${currentPage === '/ContactMe' ? 'active' : ''} w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 nav-item"}
+            className={` w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 nav-item`}
           >
             <AiOutlineMail size={20} />
             <span className="pl-4">Contact</span>
@@ -60,7 +60,7 @@ const Sidenav = () => {
 
           <Link
             to="/Resume"
-            className={"nav-link ${currentPage === '/Resume' ? 'active' : ''} w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 nav-item"}
+            className={` w-[75%] flex justify-center items-center rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 nav-item`}
           >
             <BsPerson size={20} />
             <span className="pl-4">Resume</span>
@@ -69,35 +69,35 @@ const Sidenav = () => {
       ) : (
         ""
       )}
-      <div className="md:block hidden fixed top-[25%] z-10">
+      <div className="md:block hidden fixed top-[25%] z-10 ml-8">
         <div className="flex flex-col">
           <a
-            href="/home"
-            className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300"
+            href="/"
+            className="rounded-full shadow-lg bg-gray-100 shadow-gray-700 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-slate-300"
           >
             <AiOutlineHome size={20} />
           </a>
           <a
             href="/aboutMe"
-            className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300"
+            className="rounded-full shadow-lg bg-gray-100 shadow-gray-700 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-slate-300"
           >
             <GrProjects size={20} />
           </a>
           <a
             href="/portfolio"
-            className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300"
+            className="rounded-full shadow-lg bg-gray-100 shadow-gray-700 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-slate-300"
           >
             <AiOutlineProject size={20} />
           </a>
           <a
             href="/contactMe"
-            className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300"
+            className="rounded-full shadow-lg bg-gray-100 shadow-gray-700 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-slate-300"
           >
             <AiOutlineMail size={20} />
           </a>
           <a
             href="/resume"
-            className="rounded-full shadow-lg bg-gray-100 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300"
+            className="rounded-full shadow-lg bg-gray-100 shadow-gray-700 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-slate-300"
           >
             <BsPerson size={20} />
           </a>
