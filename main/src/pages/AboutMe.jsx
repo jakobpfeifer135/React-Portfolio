@@ -1,54 +1,45 @@
+import { motion } from "framer-motion";
+
 export default function About() {
-  
   return (
-    <div className="bg-gradient-to-r from-gray-800 to-gray-900 text-white p-8 rounded-lg shadow-lg max-w-4xl mx-auto">
-      <div className="grid grid-cols-1 md:grid-cols-2 gap-8 items-center">
-        <div>
-          <h1 className="text-4xl font-bold mb-4">Hello, I'm [Your Name]</h1>
-          <p className="text-lg mb-4">
-            Welcome to my digital space! I'm a passionate web developer with a strong commitment to
-            creating immersive and innovative online experiences.
-          </p>
-          <p className="text-lg mb-4">
-            With a background in React.js, JavaScript/TypeScript, HTML5, and CSS3, I specialize in
-            crafting robust and visually stunning web applications.
-          </p>
-          <p className="text-lg">
-            Let's collaborate to transform your ideas into captivating digital solutions. Explore my
-            portfolio and reach out to kickstart our creative journey!
-          </p>
-          <div className="mt-8">
-            <h2 className="text-2xl font-bold mb-4">Skills</h2>
-            <ul className="grid grid-cols-2 gap-4">
-              <li className="text-lg">
-                <span className="text-gray-400 mr-2">&#8226;</span> React.js
-              </li>
-              <li className="text-lg">
-                <span className="text-blue-500 mr-2">&#8226;</span> JavaScript/TypeScript
-              </li>
-              <li className="text-lg">
-                <span className="text-gray-400 mr-2">&#8226;</span> HTML5, CSS3
-              </li>
-              <li className="text-lg">
-                <span className="text-purple-500 mr-2">&#8226;</span> Responsive Web Design
-              </li>
-              {/* Add more skills as needed */}
-            </ul>
-          </div>
+    <>
+      <section className="flex  bg-[#43734A] p-20  text-[#F1F2E9] sm:block sm:flex-wrap sm:px-40 sm:py-20 ">
+        <div className="flex-wrap text-center">
+          <h2 className="text-2xl">Hi There!</h2>
+          <h1 className="text-3xl font-bold">I'm a Full-Stack Web Developer</h1>
+          <h2 className="text-2xl">I make complex look simple.</h2>
+          <button className="mt-5 h-10 w-40 rounded-lg border border-[#070D06] bg-[#637368] shadow-md shadow-[#182612] hover:bg-[#A0A698]">
+            Contact Me
+          </button>
+          <ul className="sm:text-md pt-5 ">
+            <li>
+              Hello, I'm a soon-to-be graduate from SMU with expertise in the
+              MERN stack. As a dynamic web developer, I excel in crafting
+              interactive and seamless user experiences. With a foundation in
+              computer science and a commitment to staying knowledgeable on
+              industry trends, I'm enthusiastic about leveraging my skills to
+              contribute to innovative projects and explore new challenges in
+              the field of web development.
+            </li>
+          </ul>
         </div>
-        <div className="order-first md:order-last">
-          <div className="relative">
-            <div className=" h-full w-full object-cover mx-auto md:mx-0 overflow-hidden">
-              <img
-                src="src/assets/images/bgimage.jpg" // Replace with your actual profile image URL
-                alt="Profile"
-                className="w-full h-full object-cover"
-              />
-            </div>
-            <div className="absolute top-0 left-0 w-full h-full bg-gradient-to-b from-transparent via-transparent to-black opacity-80"></div>
-          </div>
+
+        <div className=" sm:flex sm:justify-center ">
+          <img
+            className="  max-w-[500px] max-h-[350px] mt-5 border border-[#070D06] border-opacity-50 bg-[#60BF6E] object-cover p-3 hidden sm:block"
+            src="https://scontent-dfw5-2.xx.fbcdn.net/v/t39.30808-6/269887933_10221195082648087_6508255957365048045_n.jpg?_nc_cat=106&ccb=1-7&_nc_sid=5f2048&_nc_ohc=Z1vyxP8c75QAX-g0QBQ&_nc_ht=scontent-dfw5-2.xx&oh=00_AfCzTGt3io5Zb8obC9MKxfvvY0wmIxWU2Gb-nqQkAq8OXQ&oe=656489B8"
+            alt=""
+          />
         </div>
-      </div>
-    </div>
+      </section>
+      <section>
+        {/* <p className="text-white text-4xl">hello world</p> */}
+        <img
+          className="h-screen w-full object-cover"
+          src="https://images.unsplash.com/photo-1473773508845-188df298d2d1?q=80&w=1374&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D"
+          alt=""
+        />
+      </section>
+    </>
   );
-};
+}

@@ -7,104 +7,109 @@ import {
 } from "react-icons/ai";
 import { BsPerson } from "react-icons/bs";
 import { GrProjects } from "react-icons/gr";
-import { Link } from 'react-router-dom'
+import { Link } from "react-router-dom";
 
 const Sidenav = () => {
-  
-  
   const [mobileShow, setMobileShow] = useState(false);
   const handleNav = (e) => {
     console.log(e);
     setMobileShow(!mobileShow);
     console.log("state changed");
   };
- 
+
   return (
     <div>
       <AiOutlineMenu
         onClick={handleNav}
-        className={mobileShow ? `absolute top-4 right-4 z-[99] md:hidden  text-red-800 text-3xl cursor-pointer `: `absolute top-4 right-4 z-[99] md:hidden  text-white text-3xl cursor-pointer `}
+        className={
+          mobileShow
+            ? `absolute right-4 top-4 z-[99] cursor-pointer  text-3xl text-[#1d7829] md:hidden `
+            : `absolute right-4 top-4 z-[99] cursor-pointer  text-3xl text-white md:hidden `
+        }
       />
 
-      {/* {nav ? ( */}
-      <div className={mobileShow ? `duration-1000 transition-opacity opacity-100 ease-in-out fixed w-full h-screen bg-gray-100 flex flex-col justify-center items-center z-20 `: `opacity-0 h-0 `}>
-          <Link
-            to="/"
-            onClick={() => setMobileShow(!mobileShow)}
-            className={`w-[75%] flex justify-center items-center rounded-full shadow-lg text-white bg-red-800 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 nav-item `}
-          >
-            <AiOutlineHome size={20} />
-            <span className="pl-4">Home</span>
-          </Link>
+      <div
+        className={
+          mobileShow
+            ? `fixed z-20 flex h-screen w-full flex-col items-center justify-center bg-gray-100 opacity-100 transition-opacity duration-1000 ease-in-out `
+            : `h-0 hidden`
+        }
+      >
+        <Link
+          to="/"
+          onClick={() => setMobileShow(!mobileShow)}
+          className={`nav-item m-2 flex w-[75%] cursor-pointer items-center justify-center rounded-full bg-[#1d7829] p-4 text-white shadow-lg shadow-gray-400 duration-200 ease-in hover:scale-110 `}
+        >
+          <AiOutlineHome size={20} />
+          <span className="pl-4">Home</span>
+        </Link>
 
-          <Link
-            to="/AboutMe"
-            onClick={() => setMobileShow(!mobileShow)}
-            className={` w-[75%] flex justify-center items-center rounded-full shadow-lg text-white bg-red-800 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 nav-item`}
-          >
-            <GrProjects size={20} />
-            <span className="pl-4">About me</span>
-          </Link>
+        <Link
+          to="/AboutMe"
+          onClick={() => setMobileShow(!mobileShow)}
+          className={` nav-item m-2 flex w-[75%] cursor-pointer items-center justify-center rounded-full bg-[#1d7829] p-4 text-white shadow-lg shadow-gray-400 duration-200 ease-in hover:scale-110`}
+        >
+          <GrProjects size={20} />
+          <span className="pl-4">About me</span>
+        </Link>
 
-          <Link
-            to="/Portfolio"
-            onClick={() => setMobileShow(!mobileShow)}
-            className={` w-[75%] flex justify-center items-center rounded-full shadow-lg text-white bg-red-800 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 nav-item`}
-          >
-            <AiOutlineProject size={20} />
-            <span className="pl-4">Portfolio</span>
-          </Link>
+        <Link
+          to="/Portfolio"
+          onClick={() => setMobileShow(!mobileShow)}
+          className={` nav-item m-2 flex w-[75%] cursor-pointer items-center justify-center rounded-full bg-[#1d7829] p-4 text-white shadow-lg shadow-gray-400 duration-200 ease-in hover:scale-110`}
+        >
+          <AiOutlineProject size={20} />
+          <span className="pl-4">Portfolio</span>
+        </Link>
 
-          <Link
-            to="/ContactMe"
-            onClick={() => setMobileShow(!mobileShow)}
-            className={` w-[75%] flex justify-center items-center rounded-full shadow-lg text-white bg-red-800 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 nav-item`}
-          >
-            <AiOutlineMail size={20} />
-            <span className="pl-4">Contact</span>
-          </Link>
+        <Link
+          to="/ContactMe"
+          onClick={() => setMobileShow(!mobileShow)}
+          className={` nav-item m-2 flex w-[75%] cursor-pointer items-center justify-center rounded-full bg-[#1d7829] p-4 text-white shadow-lg shadow-gray-400 duration-200 ease-in hover:scale-110`}
+        >
+          <AiOutlineMail size={20} />
+          <span className="pl-4">Contact</span>
+        </Link>
 
-          <Link
-            to="/Resume"
-            onClick={() => setMobileShow(!mobileShow)}
-            className={` w-[75%] flex justify-center items-center rounded-full shadow-lg text-white bg-red-800 shadow-gray-400 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-200 nav-item`}
-          >
-            <BsPerson size={20} />
-            <span className="pl-4">Resume</span>
-          </Link>
-        </div>
-      {/* // ) : (
-      //   ""
-      // )} */}
-      <div className="md:block hidden fixed top-[25%] z-10 ml-8">
-        <div className="flex flex-col">
+        <Link
+          to="/Resume"
+          onClick={() => setMobileShow(!mobileShow)}
+          className={` nav-item m-2 flex w-[75%] cursor-pointer items-center justify-center rounded-full bg-[#1d7829] p-4 text-white shadow-lg shadow-gray-400 duration-200 ease-in hover:scale-110`}
+        >
+          <BsPerson size={20} />
+          <span className="pl-4">Resume</span>
+        </Link>
+      </div>
+
+      <div className="fixed top-[25%] z-10 ml-8 hidden md:block">
+        <div className="flex flex-col items-center">
           <a
             href="/"
-            className="rounded-full shadow-lg bg-gray-100 shadow-gray-700 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-red-600 text-red-700 hover:text-white"
+            className="m-2 cursor-pointer rounded-full bg-gray-100 p-4 text-[#1d7829] shadow-lg shadow-gray-700 duration-300 ease-in hover:scale-110 hover:bg-[#1d7829] hover:text-white"
           >
             <AiOutlineHome size={20} />
           </a>
           <a
-            href="/aboutMe"
-            className="rounded-full shadow-lg bg-gray-100 shadow-gray-700 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-red-600 text-red-700 hover:text-white"
+            href="/AboutMe"
+            className="m-2 cursor-pointer rounded-full bg-gray-100 p-4 text-[#1d7829] shadow-lg shadow-gray-700 duration-300 ease-in hover:scale-110 hover:bg-[#1d7829] hover:text-white"
           >
             <GrProjects size={20} />
           </a>
           <a
-            href="/portfolio"
-            className="rounded-full shadow-lg bg-gray-100 shadow-gray-700 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-red-600 text-red-700 hover:text-white"
+            href="/Portfolio"
+            className="m-2 cursor-pointer rounded-full bg-gray-100 p-4 text-[#1d7829] shadow-lg shadow-gray-700 duration-300 ease-in hover:scale-110 hover:bg-[#1d7829] hover:text-white"
           >
             <AiOutlineProject size={20} />
           </a>
           <a
-            href="/contactMe"
-            className="rounded-full shadow-lg bg-gray-100 shadow-gray-700 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-red-600 text-red-700 hover:text-white"
+            href="/ContactMe"
+            className="m-2 cursor-pointer rounded-full bg-gray-100 p-4 text-[#1d7829] shadow-lg shadow-gray-700 duration-300 ease-in hover:scale-110 hover:bg-[#1d7829] hover:text-white"
           >
             <AiOutlineMail size={20} />
           </a>
           <a
-            href="/resume"
-            className="rounded-full shadow-lg bg-gray-100 shadow-gray-700 m-2 p-4 cursor-pointer hover:scale-110 ease-in duration-300 hover:bg-red-600 text-red-700 hover:text-white"
+            href="/Resume"
+            className="m-2 cursor-pointer rounded-full bg-gray-100 p-4 text-[#1d7829] shadow-lg shadow-gray-700 duration-300 ease-in hover:scale-110 hover:bg-[#1d7829] hover:text-white"
           >
             <BsPerson size={20} />
           </a>
