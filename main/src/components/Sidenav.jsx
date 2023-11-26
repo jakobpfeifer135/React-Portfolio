@@ -23,8 +23,8 @@ const Sidenav = () => {
         onClick={handleNav}
         className={
           mobileShow
-            ? `absolute right-4 top-4 z-[99] cursor-pointer  text-3xl text-[#1d7829] md:hidden `
-            : `absolute right-4 top-4 z-[99] cursor-pointer  text-3xl text-white md:hidden `
+            ? `absolute right-4 top-4 z-[99] cursor-pointer  text-4xl text-[#1d7829] md:hidden `
+            : `absolute right-4 top-4 z-[99] cursor-pointer  text-4xl text-white md:hidden `
         }
       />
 
