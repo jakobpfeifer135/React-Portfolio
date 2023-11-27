@@ -1,5 +1,10 @@
 import PortfolioCard from "../components/PortfolioCard";
-
+import donutShop from "../assets/images/donutShop.png";
+import scheduler from "../assets/images/scheduler.png";
+import movieCave from "../assets/images/movieCave.png";
+import portfolio from "../assets/images/portfolio.png"
+import passwordGen from "../assets/images/passwordGen.png"
+import firstPortfolio from "../assets/images/firstPortfolio.png"
 const projectsData = [
   {
     id: 1,
@@ -8,7 +13,7 @@ const projectsData = [
       "A simple practice website to practice demonstration of ui/ux design with a touch of back end implementation .",
     demoLink: "https://example.com/demo1",
     codeLink: "https://github.com/jakobpfeifer135/practice-website",
-    imageUrl: "src/assets/images/donutShop.png",
+    imageUrl: donutShop,
   },
   {
     id: 2,
@@ -17,7 +22,7 @@ const projectsData = [
       "How to utilize apis and use concatenation to pull minute details from the array of info and use more than one api at a time and a huge part was getting to learn tailwind .",
     demoLink: "https://jakobpfeifer135.github.io/movie-project-1/",
     codeLink: "https://github.com/jakobpfeifer135/movie-project-1",
-    imageUrl: "src/assets/images/movieCave.png",
+    imageUrl: movieCave,
   },
   {
     id: 3,
@@ -26,7 +31,7 @@ const projectsData = [
       "A overall new experience for my coding journey a react and tailwind based portfolio for myself !",
     demoLink: "",
     codeLink: "https://github.com/jakobpfeifer135/React-Portfolio",
-    imageUrl: "src/assets/images/portfolio.png",
+    imageUrl: portfolio,
   },
   {
     id: 4,
@@ -35,7 +40,7 @@ const projectsData = [
       " To test all different types of arrays and concatenation in conjunction with on another and implement a more user based result of random characters .",
     demoLink: "https://jakobpfeifer135.github.io/password-Generator/",
     codeLink: "https://github.com/jakobpfeifer135/password-Generator",
-    imageUrl: "src/assets/images/passwordGen.png",
+    imageUrl: passwordGen,
   },
   {
     id: 5,
@@ -44,7 +49,7 @@ const projectsData = [
       "My motivation was to learn implementation of display:flex as a whole, The different properties that surround this css structure, and how to manipulate it accordingly .",
     demoLink: "https://jakobpfeifer135.github.io/portfolio-challenge/",
     codeLink: "https://github.com/jakobpfeifer135/portfolio-challenge",
-    imageUrl: "src/assets/images/firstPortfolio.png",
+    imageUrl: firstPortfolio,
   },
   {
     id: 6,
@@ -53,7 +58,7 @@ const projectsData = [
       " I wanted to see how to use local storage in ones browser to store info shortly and learn how we can use dayjs to track real life time .",
     demoLink: "https://jakobpfeifer135.github.io/Work-day-scheduler/",
     codeLink: "https://github.com/jakobpfeifer135/Work-day-scheduler",
-    imageUrl: "src/assets/images/scheduler.png",
+    imageUrl: scheduler,
   },
 
   // Add more projects as needed
