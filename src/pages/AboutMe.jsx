@@ -1,4 +1,4 @@
-import aboutMe from "../assets/images/aboutMe.jpg"
+import aboutMe from "../assets/images/aboutMe.jpg";
 
 export default function About() {
   return (
@@ -8,11 +8,14 @@ export default function About() {
           <h2 className="text-2xl">Hi There!</h2>
           <h1 className="text-3xl font-bold">I'm a Full-Stack Web Developer</h1>
           <h2 className="text-2xl">I make complex look simple.</h2>
-          <button style={{ fontFamily: 'Rubik, san serif' }} className="mt-5 h-10 w-40 rounded-lg  bg-[#637368] shadow-md shadow-[#182612] hover:bg-[#A0A698]">
+          <button
+            style={{ fontFamily: "Rubik, san serif" }}
+            className="mt-5 h-10 w-40 rounded-lg  bg-[#637368] shadow-md shadow-[#182612] hover:bg-[#A0A698]"
+          >
             Contact Me
           </button>
           <ul className="sm:text-md pt-5 text-lg">
-            <li style={{ fontFamily: 'Rubik, san serif' }}>
+            <li style={{ fontFamily: "Rubik, san serif" }}>
               Hello, I'm a soon-to-be graduate from SMU with expertise in the
               MERN stack. As a dynamic web developer, I excel in crafting
               interactive and seamless user experiences. With a foundation in
@@ -26,7 +29,7 @@ export default function About() {
 
         <div className=" sm:flex sm:justify-center ">
           <img
-            className="  max-w-[500px] max-h-[350px] mt-5  bg-[#475d4e] object-cover p-3 hidden sm:block rounded-full"
+            className="  mt-5 hidden max-h-[350px]  max-w-[500px] rounded-full bg-[#475d4e] object-cover p-3 sm:block"
             src={aboutMe}
             alt=""
           />

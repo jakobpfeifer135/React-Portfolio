@@ -2,9 +2,9 @@ import PortfolioCard from "../components/PortfolioCard";
 import donutShop from "../assets/images/donutShop.png";
 import scheduler from "../assets/images/scheduler.png";
 import movieCave from "../assets/images/movieCave.png";
-import portfolio from "../assets/images/portfolio.png"
-import passwordGen from "../assets/images/passwordGen.png"
-import firstPortfolio from "../assets/images/firstPortfolio.png"
+import portfolio from "../assets/images/portfolio.png";
+import passwordGen from "../assets/images/passwordGen.png";
+import firstPortfolio from "../assets/images/firstPortfolio.png";
 const projectsData = [
   {
     id: 1,

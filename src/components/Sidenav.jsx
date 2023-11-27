@@ -32,7 +32,7 @@ const Sidenav = () => {
         className={
           mobileShow
             ? `fixed z-20 flex h-screen w-full flex-col items-center justify-center bg-gray-100 opacity-100 transition-opacity duration-1000 ease-in-out `
-            : `h-0 hidden`
+            : `hidden h-0`
         }
       >
         <Link
