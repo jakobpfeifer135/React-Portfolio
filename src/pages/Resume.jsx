@@ -16,7 +16,7 @@ const Resume = () => {
       <p className="mb-8 text-center text-2xl text-white">
         You can download my resume{" "}
         <a
-          href="src/assets/images/JakobPfeiferResume.pdf"
+          href="https://drive.google.com/file/d/1jqgW3XvJVZcdSyRe1SvuwEF-u0bFlxLh/view?usp=sharing"
           download
           className="text-[#B3FF66] underline underline-offset-4"
         >
