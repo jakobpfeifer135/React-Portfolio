@@ -5,6 +5,13 @@ import movieCave from "../assets/images/movieCave.png";
 import portfolio from "../assets/images/portfolio.png";
 import passwordGen from "../assets/images/passwordGen.png";
 import firstPortfolio from "../assets/images/firstPortfolio.png";
+import firstPortfolioMobile from "../assets/images/firstPortfolioMobile.png";
+import donutShopMobile from "../assets/images/donutShopMobile.png";
+import schedulerMobile from "../assets/images/schedulerMobile.png";
+import movieCaveMobile from "../assets/images/movieCaveMobile.png";
+import portfolioMobile from "../assets/images/portfolioMobile.png";
+import passwordGenMobile from "../assets/images/passwordGenMobile.png";
+
 const projectsData = [
   {
     id: 1,
@@ -14,6 +21,7 @@ const projectsData = [
     demoLink: "https://example.com/demo1",
     codeLink: "https://github.com/jakobpfeifer135/practice-website",
     imageUrl: donutShop,
+    imageUrl2: donutShopMobile,
   },
   {
     id: 2,
@@ -23,6 +31,7 @@ const projectsData = [
     demoLink: "https://jakobpfeifer135.github.io/movie-project-1/",
     codeLink: "https://github.com/jakobpfeifer135/movie-project-1",
     imageUrl: movieCave,
+    imageUrl2: movieCaveMobile,
   },
   {
     id: 3,
@@ -32,6 +41,7 @@ const projectsData = [
     demoLink: "",
     codeLink: "https://github.com/jakobpfeifer135/React-Portfolio",
     imageUrl: portfolio,
+    imageUrl2: portfolioMobile,
   },
   {
     id: 4,
@@ -41,6 +51,7 @@ const projectsData = [
     demoLink: "https://jakobpfeifer135.github.io/password-Generator/",
     codeLink: "https://github.com/jakobpfeifer135/password-Generator",
     imageUrl: passwordGen,
+    imageUrl2: passwordGenMobile,
   },
   {
     id: 5,
@@ -50,6 +61,7 @@ const projectsData = [
     demoLink: "https://jakobpfeifer135.github.io/portfolio-challenge/",
     codeLink: "https://github.com/jakobpfeifer135/portfolio-challenge",
     imageUrl: firstPortfolio,
+    imageUrl2: firstPortfolioMobile,
   },
   {
     id: 6,
@@ -59,6 +71,7 @@ const projectsData = [
     demoLink: "https://jakobpfeifer135.github.io/Work-day-scheduler/",
     codeLink: "https://github.com/jakobpfeifer135/Work-day-scheduler",
     imageUrl: scheduler,
+    imageUrl2: schedulerMobile,
   },
 
   // Add more projects as needed
