@@ -5,12 +5,12 @@ import movieCave from "../assets/images/movieCave.png";
 import portfolio from "../assets/images/portfolio.png";
 import passwordGen from "../assets/images/passwordGen.png";
 import firstPortfolio from "../assets/images/firstPortfolio.png";
-import firstPortfolioMobile from "../assets/images/firstPortfolioMobile.png";
-import donutShopMobile from "../assets/images/donutShopMobile.png";
-import schedulerMobile from "../assets/images/schedulerMobile.png";
-import movieCaveMobile from "../assets/images/movieCaveMobile.png";
-import portfolioMobile from "../assets/images/portfolioMobile.png";
-import passwordGenMobile from "../assets/images/passwordGenMobile.png";
+import firstPortfolioMobile from "../assets/images/firstPortfolioMobile.webp";
+import donutShopMobile from "../assets/images/donutShopMobile.webp";
+import schedulerMobile from "../assets/images/schedulerMobile.webp";
+import movieCaveMobile from "../assets/images/movieCaveMobile.webp";
+import portfolioMobile from "../assets/images/portfolioMobile.webp";
+import passwordGenMobile from "../assets/images/passwordGenMobile.webp";
 
 const projectsData = [
   {
