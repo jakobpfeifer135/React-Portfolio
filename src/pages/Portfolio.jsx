@@ -91,7 +91,7 @@ const Portfolio = () => {
         <div className="flex flex-wrap gap-8 justify-center">
           {projectsData.map((project) => (
             <div key={project.id} className="flex-none w-full md:w-1/2 lg:w-1/3">
-              <div className="bg-white/80 p-4 rounded-xl shadow h-full">
+              <div className="bg-white p-4 rounded-xl shadow h-full">
                 <PortfolioCard project={project} />
               </div>
             </div>

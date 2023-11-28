@@ -27,7 +27,7 @@ const ProjectCard = ({ project }) => {
   }, [project.imageUrl, project.imageUrl2]);
 
   return (
-    <div className="mb-4 rounded-md bg-[#43734A] p-6 font-bold text-white shadow-md min-h-[400px] md:min-h-[470px] relative">
+    <div className="mb-4 rounded-md bg-[#43734A] p-6 font-bold text-white shadow-md min-h-[400px] md:min-h-[470px] lg:min-h-[545px]  relative">
       <img
         src={imageSrc}
         alt={`Project ${project.id}`}

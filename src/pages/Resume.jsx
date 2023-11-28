@@ -26,8 +26,8 @@ const Resume = () => {
       </p>
 
       {/* Proficiencies Section */}
-      <div className="mb-8 bg-[#5C7345] p-5 text-white">
-        <h2 className="mb-4 text-2xl font-bold">Technical Proficiencies</h2>
+      <div className="mb-8 bg-[#5C7345]/80 p-5 text-white font-mono">
+        <h2 className="mb-4 text-2xl font-bold text-center">Technical Proficiencies</h2>
         <ul className="grid grid-cols-2 gap-2">
           <li className="ml-4 list-disc">MongoDb</li>
           <li className="ml-4 list-disc">Express.js</li>
@@ -42,7 +42,7 @@ const Resume = () => {
       </div>
 
       {/* Experience Section (You can add more details as needed) */}
-      <div className="mb-8 bg-[#5C7345] text-white">
+      <div className="mb-8 bg-[#5C7345]/80 text-white font-sans">
         <h2 className="mb-4 p-4 text-2xl font-bold">Professional Experience</h2>
         <div className=" mb-4 rounded p-8 shadow-md">
           <h3 className="mb-2 text-lg font-semibold">
@@ -67,13 +67,13 @@ const Resume = () => {
       </div>
 
       {/* Education Section (You can add more details as needed) */}
-      <div className="mb-8 bg-[#5C7345] text-white">
+      <div className="mb-8 bg-[#5C7345]/80 text-white">
         <h2 className="mb-4 p-4 text-2xl font-bold">Education</h2>
         <div className=" mb-4 rounded p-8 shadow-md">
           <h3 className="mb-2 text-lg font-semibold">
             Full Stack Flex Web-Development Certification
           </h3>
-          <p className="text-white">
+          <p className="text-white font-sans">
             A Full Stack FLex Web-Developer certification from SMU primarily
             focused upon the learning and implementation of the MERN stack.
           </p>
