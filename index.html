@@ -4,6 +4,14 @@
 <head>
   <meta charset="UTF-8" />
   <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Rubik&display=swap" />
+  <style>
+    /* Your critical CSS styles go here */
+    body {
+      font-family: 'Playfair Display', serif;
+      font-family: 'Rubik', sans-serif;
+      /* ... other critical styles */
+    }
+  </style>
   <link rel="preload" fetchpriority="high" as="image" href="./src/assets/images/donutShop.webp" type="image/webp">
   <link rel="preload" fetchpriority="high" as="image" href="./src/assets/images/firstPortfolio.webp" type="image/webp">
   <link rel="preload" fetchpriority="high" as="image" href="./src/assets/images/movieCave.webp" type="image/webp">
@@ -24,7 +32,9 @@
 
 <body>
   <div id="root"></div>
-  <script type="module" src="/src/main.jsx"></script>
+
+  <!-- Defer script loading -->
+  <script defer type="module" src="/src/main.jsx"></script>
 </body>
 
 </html>

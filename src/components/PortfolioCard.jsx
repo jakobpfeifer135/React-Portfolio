@@ -33,11 +33,13 @@ const ProjectCard = ({ project }) => {
         alt={`Project ${project.id}`}
         className="mb-4 h-40 md:h-56 lg:h-64 w-full rounded-md border-2 border-black/30 object-cover"
       />
-      <h2 className="mb-2 text-xl font-bold ">{project.title}</h2>
-      <p className="mb-4 text-white ">{project.description}</p>
+      <h2 className="mb-2 text-xl font-bold" style={{ fontFamily: 'Playfair Display, serif' }}>
+        {project.title}
+      </h2>
+      <p className="mb-4 text-white">{project.description}</p>
       <div className="flex space-x-4 absolute bottom-2 left-0 right-0">
         <a
-          style={{ fontFamily: "Playfair Display, serif" }}
+          style={{ fontFamily: 'Playfair Display, serif' }}
           href={project.demoLink}
           target="_blank"
           rel="noopener noreferrer"
@@ -46,7 +48,7 @@ const ProjectCard = ({ project }) => {
           <span className="mx-4 text-lg">Demo</span>
         </a>
         <a
-          style={{ fontFamily: "Playfair Display, serif" }}
+          style={{ fontFamily: 'Playfair Display, serif' }}
           href={project.codeLink}
           target="_blank"
           rel="noopener noreferrer"
