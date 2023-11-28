@@ -69,21 +69,19 @@ const Portfolio = () => {
     'url("https://images.unsplash.com/photo-1500389783522-18c9d0d14cbc?q=80&w=1287&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D")'; // Replace with your image URL
 
   return (
-    <div
-      className="min-h-screen"
-      style={{ backgroundImage: pageBackgroundImage, backgroundSize: "cover" }}
-    >
-      <div className="mx-auto max-w-3xl p-8">
-        <h1
-          style={{ fontFamily: "Playfair Display, serif" }}
-          className="mb-8 flex justify-center text-4xl font-bold text-white"
-        >
+    <div className="min-h-screen bg-cover" style={{ backgroundImage: pageBackgroundImage }}>
+      <div className="container mx-auto p-8">
+        <h1 className="mb-8 text-4xl font-bold text-white text-center font-serif">
           My Portfolio Showcase
         </h1>
 
-        <div className="grid grid-cols-1 gap-8 md:grid-cols-2 lg:grid-cols-3">
+        <div className="flex flex-wrap gap-8 justify-center">
           {projectsData.map((project) => (
-            <PortfolioCard key={project.id} project={project} />
+            <div key={project.id} className="flex-none w-full md:w-1/2 lg:w-1/3">
+              <div className="bg-white/80 p-4 rounded-xl shadow h-full">
+                <PortfolioCard project={project} />
+              </div>
+            </div>
           ))}
         </div>
       </div>

@@ -1,14 +1,14 @@
 const ProjectCard = ({ project }) => {
   return (
-    <div className="mb-4 rounded-md bg-[#43734A] p-6 font-bold text-white shadow-md ">
+    <div className="mb-4 rounded-md bg-[#43734A] p-6 font-bold text-white shadow-md min-h-[400px] md:min-h-[470px] relative">
       <img
         src={project.imageUrl}
         alt={`Project ${project.id}`}
         className="mb-4 h-40 w-full rounded-md border-2 border-black/30 object-cover"
       />
-      <h2 className="mb-2 text-xl font-bold">{project.title}</h2>
-      <p className="mb-4 text-white">{project.description}</p>
-      <div className="flex space-x-4">
+      <h2 className="mb-2 text-xl font-bold ">{project.title}</h2>
+      <p className="mb-4 text-white ">{project.description}</p>
+      <div className="flex space-x-4 absolute bottom-2 left-0 right-0">
         <a
           style={{ fontFamily: "Playfair Display, serif" }}
           href={project.demoLink}
@@ -16,7 +16,7 @@ const ProjectCard = ({ project }) => {
           rel="noopener noreferrer"
           className="flex items-center text-white hover:underline"
         >
-          <span className="mr-2 text-lg">Demo</span>
+          <span className="mx-4 text-lg">Demo</span>
         </a>
         <a
           style={{ fontFamily: "Playfair Display, serif" }}
