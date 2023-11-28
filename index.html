@@ -1,32 +1,42 @@
-<!doctype html>
+<!DOCTYPE html>
 <html lang="en">
 
 <head>
-  <meta charset="UTF-8" />
-  <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Rubik&display=swap" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="description" content="Your description here">
+  <meta name="author" content="Your Name">
+
+  <!-- Inline Critical CSS -->
   <style>
     /* Your critical CSS styles go here */
     body {
       font-family: 'Playfair Display', serif;
-      font-family: 'Rubik', sans-serif;
       /* ... other critical styles */
     }
+
+    h1, h2, h3 {
+      font-family: 'Rubik', sans-serif; /* Adjust this based on your specific needs */
+    }
   </style>
-  <link rel="preload" fetchpriority="high" as="image" href="./src/assets/images/donutShop.webp" type="image/webp">
-  <link rel="preload" fetchpriority="high" as="image" href="./src/assets/images/firstPortfolio.webp" type="image/webp">
-  <link rel="preload" fetchpriority="high" as="image" href="./src/assets/images/movieCave.webp" type="image/webp">
-  <link rel="preload" fetchpriority="high" as="image" href="./src/assets/images/passwordGen.webp" type="image/webp">
-  <link rel="preload" fetchpriority="high" as="image" href="./src/assets/images/portfolio.webp" type="image/webp">
-  <link rel="preload" fetchpriority="high" as="image" href="./src/assets/images/scheduler.webp" type="image/webp">
-  <link rel="preload" fetchpriority="high" as="image" href="./src/assets/images/donutShopMobile.webp" type="image/webp">
-  <link rel="preload" fetchpriority="high" as="image" href="./src/assets/images/firstPortfolioMobile.webp"
-    type="image/webp">
-  <link rel="preload" fetchpriority="high" as="image" href="./src/assets/images/movieCaveMobile.webp" type="image/webp">
-  <link rel="preload" fetchpriority="high" as="image" href="./src/assets/images/passwordGenMobile.webp"
-    type="image/webp">
-  <link rel="preload" fetchpriority="high" as="image" href="./src/assets/images/portfolioMobile.webp" type="image/webp">
-  <link rel="preload" fetchpriority="high" as="image" href="./src/assets/images/schedulerMobile.webp" type="image/webp">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- Preload Critical Images -->
+  <link rel="preload" as="image" href="./src/assets/images/donutShop.webp" type="image/webp">
+  <link rel="preload" as="image" href="./src/assets/images/firstPortfolio.webp" type="image/webp">
+  <link rel="preload" as="image" href="./src/assets/images/movieCave.webp" type="image/webp">
+  <link rel="preload" as="image" href="./src/assets/images/passwordGen.webp" type="image/webp">
+  <link rel="preload" as="image" href="./src/assets/images/portfolio.webp" type="image/webp">
+  <link rel="preload" as="image" href="./src/assets/images/scheduler.webp" type="image/webp">
+  <link rel="preload" as="image" href="./src/assets/images/donutShopMobile.webp" type="image/webp">
+  <link rel="preload" as="image" href="./src/assets/images/firstPortfolioMobile.webp" type="image/webp">
+  <link rel="preload" as="image" href="./src/assets/images/movieCaveMobile.webp" type="image/webp">
+  <link rel="preload" as="image" href="./src/assets/images/passwordGenMobile.webp" type="image/webp">
+  <link rel="preload" as="image" href="./src/assets/images/portfolioMobile.webp" type="image/webp">
+  <link rel="preload" as="image" href="./src/assets/images/schedulerMobile.webp" type="image/webp">
+
+  <!-- External Fonts -->
+  <link rel="stylesheet" media="print" onload="this.media='all'" href="https://fonts.googleapis.com/css2?family=Playfair+Display&family=Rubik&display=swap">
+
   <title>Jakob Pfeifer Portfolio</title>
 </head>
 
