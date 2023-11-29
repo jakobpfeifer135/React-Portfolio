@@ -93,7 +93,7 @@ export default function App() {
             />
           </div>
           <div className="mb-4">
-            <label htmlFor="message" className="block text-sm font-medium text-white">Message</label>
+            <label htmlFor="message" className="block text-sm font-medium text-white ">Message</label>
             <textarea
               id="message"
               name="message"
@@ -105,9 +105,9 @@ export default function App() {
               required
             ></textarea>
           </div>
-          <div className="mb-4">
-            <label htmlFor="file" className="block text-sm font-medium text-white">File</label>
-            <input type="file" name="file" onChange={handleFileChange} />
+          <div className="mb-4 ">
+            <label htmlFor="file" className=" block text-sm font-medium text-white">File</label>
+            <input type="file" name="file" className="text-white p-2" onChange={handleFileChange} />
           </div>
           <button
             type="submit"
