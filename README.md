@@ -34,7 +34,7 @@ https://github.com/jakobpfeifer135 - Check me out! <br/>
 
 
 
-   ![completed project](</src/assets/images/portfolio.png>)
+   ![completed project](</src/assets/images/portfolio.webp>)
 
 
 ## Credits
